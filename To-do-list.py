@@ -1,9 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 
-window = tk.Tk()
-window.geometry("325x400")
-window.title("To-Do-List")
+
 
 def add():
     task = entry.get()
@@ -27,6 +25,15 @@ def delete():
 def clear():
     listbox.delete(0, tk.END)
     
+
+
+#Creating main window
+window = tk.Tk()
+window.geometry("325x400")
+window.title("To-Do-List")
+
+
+
 
 
 #Creating widget for input
